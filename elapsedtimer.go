@@ -5,8 +5,7 @@ package goutils
 #include <stdint.h>
 #ifdef _WIN32
 #include <windows.h>
-//#pragma comment(lib, "winmm.lib")
-#cgo LDFLAGS: -lwinmm
+#cgo windows LDFLAGS: -lwinmm
 #endif
 
 uint64_t systemUptime()
